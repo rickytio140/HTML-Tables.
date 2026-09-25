@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas HTML Tables - Ricky Tio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+        .student-info {
+            background-color: #f4f4f9;
+            padding: 15px;
+            border-left: 4px solid #0056b3;
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        /* Sedikit CSS sederhana untuk visual agar persis seperti gambar */
+        th {
+            background-color: #e9ecef;
+            font-weight: bold;
+        }
+        thead {
+            border-bottom: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="student-info">
+        <h3>Informasi Pengerjaan</h3>
+        <p><strong>Nama:</strong> Ricky Tio | <strong>NIM:</strong> 2421053</p>
+    </div>
+
+    <!-- GRADE A: Menguji logika colspan dan rowspan dengan multi-level headers -->
+    <h2>Grade A: Tabel Hasil Ujian</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">No</th>
+                <th rowspan="2">Nama Mahasiswa</th>
+                <th colspan="3">Nilai Ujian</th>
+                <th rowspan="2">Rata-rata</th>
+            </tr>
+            <tr>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Budi</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+                <td>87.6</td>
+            </tr>
+            <!-- Baris data lainnya tinggal menyesuaikan referensi gambar -->
+        </tbody>
+    </table>
+
+    <!-- GRADE B: Penggabungan baris dan kolom yang cukup detail -->
+    <h2>Grade B: Laporan Mahasiswa</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Mata Kuliah</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">101</td>
+                <td rowspan="2">Siti</td>
+                <td>Pemrograman Web</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td>Basis Data</td>
+                <td>Lulus</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: right; padding-right: 15px;"><b>Total Mata Kuliah Lulus:</b></td>
+                <td><b>2</b></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- GRADE C: Penataan standar tanpa merge cell -->
+    <h2>Grade C: Jadwal Kuliah Basic</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Hari</th>
+                <th>Waktu</th>
+                <th>Mata Kuliah</th>
+                <th>Ruangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Senin</td>
+                <td>08:00 - 10:00</td>
+                <td>Algoritma</td>
+                <td>Lab A</td>
+            </tr>
+            <tr>
+                <td>Selasa</td>
+                <td>10:00 - 12:00</td>
+                <td>Jaringan Komputer</td>
+                <td>Ruang 102</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
